@@ -117,11 +117,11 @@ const Home = () => {
           />
 
           <img src={mytoon} alt="profile" className="hidden md:block relative w-[400px] h-[400px] md:w-[600px] md:h-[600px] rounded-full object-contain hover:scale-105 transition-transform duration-500" />
-          <img src={mytoon2} alt="profile" className="md:hidden relative w-[320px] h-[320px] rounded-full object-contain hover:scale-105 transition-transform duration-500" />
+          <img src={mytoon2} alt="profile" className="md:hidden relative w-[320px] h-[320px] mt-12 rounded-full object-contain hover:scale-105 transition-transform duration-500" />
         </div>
       </div>
 
-      {/* Scroll button */}
+      {/* Scroll button */}                                                                                                                                                          
       <ScrollButton onScrollDown={handleScrollDown} />
 
       {/* Socials */}
