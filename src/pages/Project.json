@@ -1,0 +1,73 @@
+[
+
+  {
+    "id": 1,
+    "title": "Anchorr Banking App UX Case Study",
+    "scope": "UI/UX Design",
+    "summary": "A fintech app concept combining banking and brokerage services into one seamless, user‑friendly platform.",
+    "details": "Anchorr is a UI/UX design case study from 2021 that set out to solve a common frustration in personal finance...",
+    "year": 2021,
+    "preview": "https://www.behance.net/gallery/158325619/ANCHORR-MOBILE-CASE-STUDY",
+    "thumbnail": "Anchorr.png",
+    "features": ["Unified savings and investment dashboard", "Streamlined cash transfers", "Modern fintech design system", "Trust‑focused user experience"],
+    "stacks": ["Figma", "Adobe XD"],
+    "category": "ux",
+    "role": "UX Designer",
+    "duration": "6 weeks",
+    "teamSize": "Solo Project",
+    "challenges": "Keeping financial workflows simple without losing essential detail.",
+    "impact": "Proved that good design can simplify complexity while building trust."
+  },
+  {
+    "id": 2,
+    "title": "CryptoCard Dashboard",
+    "scope": "Web Development",
+    "summary": "A responsive cryptocurrency dashboard with live charts, coin filtering, and predictive performance indicators.",
+    "details": "CryptoCard was designed as a modern crypto analytics dashboard to give users a clear, interactive view of market performance...",
+    "year": 2025,
+    "preview": "https://crypto-card-six.vercel.app/",
+    "thumbnail": "CryptoCard.png",
+    "features": [
+      "Wide responsive chart with range selector",
+      "Coin cards with sparklines and % change indicators",
+      "Search bar with icon, button, and filters",
+      "Local storage persistence for last searched coin",
+      "Back button navigation",
+      "Filter cards for gainers/losers",
+      "Live API integration with auto-refresh"
+    ],
+    "stacks": ["React", "TailwindCSS", "Vite", "Chart.js", "CoinGecko API"],
+    "category": "web",
+    "role": "Frontend Developer",
+    "duration": "2 months",
+    "teamSize": "Solo",
+    "challenges": "Ensuring charts were responsive and contained across devices, integrating live API data smoothly.",
+    "impact": "Delivered a modern crypto dashboard that improves user insight into market trends."
+  },
+  {
+    "id": 3,
+    "title": "Sella Ecommerce Website",
+    "scope": "Web Development",
+    "summary": "A modern ecommerce platform built for Sella, featuring product catalog, cart, checkout, and user profile management.",
+    "details": "The Sella Ecommerce Website was developed as a comprehensive online shopping solution tailored for Sella’s brand. It integrates a product catalog with filtering and sorting, a shopping cart powered by React Context, secure checkout simulation, and user profile management. The design emphasizes clarity, responsiveness, and accessibility, ensuring a seamless shopping experience across devices. Built with React, TailwindCSS, and Vite, the site also includes authentication flows, category browsing, and a polished contact page with EmailJS integration. The project demonstrates full ecommerce flow mastery, from browsing to checkout, while maintaining performance and design consistency.",
+    "year": 2025,
+    "preview": "https://sella-three.vercel.app/", 
+    "thumbnail": "Sella.png",
+    "features": [
+      "Product catalog with filtering and sorting",
+      "Shopping cart with add/remove/update functionality",
+      "Checkout flow with simulated payments",
+      "User authentication and profile management",
+      "Responsive design across devices",
+      "Category browsing and product detail pages",
+      "Contact page with EmailJS integration"
+    ],
+    "stacks": ["React", "TailwindCSS", "Vite", "Context API", "EmailJS"],
+    "category": "web",
+    "role": "Frontend Developer",
+    "duration": "4 months",
+    "teamSize": "Solo",
+    "challenges": "Integrating multiple flows (auth, cart, checkout, contact) while keeping performance and UX smooth.",
+    "impact": "Delivered a complete ecommerce platform for Sella, showcasing ability to build complex, user‑friendly applications."
+  }
+]
