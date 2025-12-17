@@ -11,7 +11,7 @@ const LoadingScreen = ({ fadeOut }) => {
     >
       <div className="animate-spin rounded-full border-4 border-[var(--secondary-text-color)] border-t-[var(--accent)] w-12 h-12 sm:w-16 sm:h-16 md:w-20 md:h-20 mb-6"></div>
       <p className="text-sm sm:text-base md:text-lg text-[var(--secondary-text-color)] tracking-wide">
-        Preparing Tobi Francis’ Portfolio...
+         The Tobi Francis...
       </p>
     </div>
   );
