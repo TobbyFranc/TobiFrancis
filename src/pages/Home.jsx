@@ -67,7 +67,7 @@ const Home = () => {
             A passionate <span className="text-[var(--accent)]">Frontend Developer</span> crafting engaging and user-friendly web experiences.
             Skilled in HTML, CSS, JavaScript, and React.js. Let&apos;s build something amazing together!
           </p>
-          <div className="flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
+          <div className="z-20 flex flex-wrap gap-4 mt-4 justify-center md:justify-start">
             <button
               onClick={() => scrollToId("projects")}
               className="px-6 py-3 border-2 flex items-center justify-center border-[var(--accent)] text-[var(--accent)] font-medium rounded-md cursor-pointer hover:bg-[var(--accent)] hover:text-white transition duration-300"
