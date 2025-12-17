@@ -118,7 +118,7 @@ const Projects = () => {
                 </h3>
 
                 {/* Summary */}
-                <p className="text-[var(--secondary-text-color)] open-sans-200 mb-5 flex-grow text-left text-sm leading-relaxed">
+                <p className="text-[var(--secondary-text-color)] mb-5 flex-grow text-left text-sm leading-relaxed">
                   {project.summary}
                 </p>
 

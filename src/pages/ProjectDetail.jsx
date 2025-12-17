@@ -81,7 +81,7 @@ const ProjectDetail = () => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
-        className="text-md md:text-lg open-sans-200 leading-relaxed mb-8 whitespace-pre-line"
+        className="text-md md:text-lg leading-relaxed mb-8 whitespace-pre-line"
       >
         {project.details}
       </motion.p>
@@ -136,7 +136,7 @@ const ProjectDetail = () => {
         {/* Key Features */}
         <div className="bg-[var(--card-bg-color)]/80 backdrop-blur-md p-6 rounded-lg shadow-lg border border-[var(--accent)]/20 hover:shadow-xl transition">
           <h2 className="text-2xl font-semibold mb-4 text-[var(--accent)]">Key Features</h2>
-          <ul className="space-y-3 pt-2 open-sans-200">
+          <ul className="space-y-3 pt-2 ">
             {project.features?.map((feature, idx) => (
               <li key={idx} className="flex items-center gap-3 py-2">
                 <FaCheckCircle className="text-gray-400" />
@@ -156,7 +156,7 @@ const ProjectDetail = () => {
                 <p className="flex items-center gap-2 mb-2 text-gray-500 font-medium">
                   <FaTools /> Stacks
                 </p>
-                <div className="flex flex-wrap gap-2 open-sans-200">
+                <div className="flex flex-wrap gap-2 ">
                   {project.stacks.map((stack, idx) => (
                     <span
                       key={idx}
@@ -174,7 +174,7 @@ const ProjectDetail = () => {
               <p className="flex items-center gap-2 mb-1 text-gray-500 font-medium">
                 <FaLayerGroup /> Category
               </p>
-              <p className="text-[var(--main-text-color)] open-sans-200">{project.category}</p>
+              <p className="text-[var(--main-text-color)] ">{project.category}</p>
             </div>
 
             {/* Role */}
@@ -182,7 +182,7 @@ const ProjectDetail = () => {
               <p className="flex items-center gap-2 mb-1 text-gray-500 font-medium">
                 <FaUserTie /> Role
               </p>
-              <p className="text-[var(--main-text-color)] open-sans-200">{project.role}</p>
+              <p className="text-[var(--main-text-color)] ">{project.role}</p>
             </div>
 
             {/* Duration */}
@@ -191,7 +191,7 @@ const ProjectDetail = () => {
                 <p className="flex items-center gap-2 mb-1 text-gray-500 font-medium">
                   <FaClock /> Duration
                 </p>
-                <p className="text-[var(--main-text-color)] open-sans-200">{project.duration}</p>
+                <p className="text-[var(--main-text-color)] ">{project.duration}</p>
               </div>
             )}
 
@@ -201,7 +201,7 @@ const ProjectDetail = () => {
                 <p className="flex items-center gap-2 mb-1 text-gray-500 font-medium">
                   <FaUsers /> Team
                 </p>
-                <p className="text-[var(--main-text-color)] open-sans-200">{project.teamSize}</p>
+                <p className="text-[var(--main-text-color)] ">{project.teamSize}</p>
               </div>
             )}
           </div>
