@@ -32,7 +32,7 @@ const Home = () => {
         themeName="purple"
         activeTheme={activeTheme}
         onClick={handleBlobClick}
-        positionClasses="absolute top-0 left-0 w-44 h-44"
+        positionClasses="absolute top-16 left-4 w-44 h-44"
         tooltipText="Switch to Purple Theme"
         color="rgba(124,58,237,"
       />
@@ -48,7 +48,7 @@ const Home = () => {
         themeName="red"
         activeTheme={activeTheme}
         onClick={handleBlobClick}
-        positionClasses="absolute bottom-0 left-20 w-44 h-44 animation-delay-4000"
+        positionClasses="absolute bottom-2 left-2 w-44 h-44 animation-delay-4000"
         tooltipText="Switch to Red Theme"
         color="rgba(239,68,68,"
       />
@@ -95,7 +95,7 @@ const Home = () => {
             themeName="red"
             activeTheme={activeTheme}
             onClick={handleBlobClick}
-            positionClasses="absolute w-[110px] h-[110px] md:w-[140px] md:h-[140px] top-64 left-6"
+            positionClasses="absolute md:top-[70%] md:left-3 top-64 left-2 w-[120px] h-[110px] md:w-[140px] md:h-[160px] z-0"
             tooltipText="Switch to Red Theme"
             color="rgba(239,68,68,"
           />
@@ -103,7 +103,7 @@ const Home = () => {
             themeName="purple"
             activeTheme={activeTheme}
             onClick={handleBlobClick}
-            positionClasses="absolute w-[110px] h-[110px] md:w-[140px] md:h-[140px] top-0 right-6"
+            positionClasses="absolute w-[120px] h-[110px] md:w-[140px] md:h-[140px] top-4 right-6"
             tooltipText="Switch to Purple Theme"
             color="rgba(124,58,237,"
           />

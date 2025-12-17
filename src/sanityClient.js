@@ -7,8 +7,6 @@ export const client = createClient({
   useCdn: true,
   apiVersion: "2023-01-01",
 });
-console.log("Sanity Project ID:", import.meta.env.VITE_SANITY_PROJECT_ID);
-console.log("Sanity Dataset:", import.meta.env.VITE_SANITY_DATASET);
 
 
 const builder = createImageUrlBuilder(client);
