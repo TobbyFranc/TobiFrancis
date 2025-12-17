@@ -37,7 +37,7 @@ const Stacks = () => {
             className="bg-[var(--card-bg-color)] p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col items-center"
           >
             {stack.icon}
-            <h3 className="text-lg open-sans-200 font-medium text-[var(--main-text-color)]">
+            <h3 className="text-lg font-medium text-[var(--main-text-color)]">
               {stack.name}
             </h3>
           </div>
