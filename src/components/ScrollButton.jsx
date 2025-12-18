@@ -5,7 +5,7 @@ const ScrollButton = ({ onScrollDown }) => {
   return (
     <button
       onClick={onScrollDown}
-      className="group absolute bottom-0 right-6 flex flex-col items-center z-10"
+      className="group absolute bottom-0 right-6 hidden md:flex flex-col items-center z-10"
       aria-label="Scroll down"
     >
       <Scroll />

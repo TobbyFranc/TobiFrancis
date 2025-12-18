@@ -2,22 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaInfoCircle, FaExternalLinkAlt } from "react-icons/fa";
 import { motion, AnimatePresence } from "framer-motion";
-import placeholderImage from "../assets/placeholde.png";
-import projectData from "./Project.json";
-
-//"https://example.com/sella-ecommerce",
-
-// Import thumbnails from assets
-import CryptoCardThumb from "../assets/CryptoCard.png";
-import anchorrThumb from "../assets/Anchorr.png";
-import ecommerceThumb from "../assets/Sella.png";
-
-// Map JSON filenames to actual imports
-const imageMap = {
-  "CryptoCard.png": CryptoCardThumb,
-  "Anchorr.png": anchorrThumb,
-  "Sella.png": ecommerceThumb,
-};
+import { client, urlFor } from "../sanityClient"; // reuse your blog client
+import placeholderImage from "../assets/placeholderImage.jpeg";
 
 const Projects = () => {
   const [projects, setProjects] = useState([]);
@@ -25,10 +11,20 @@ const Projects = () => {
   const [filtered, setFiltered] = useState("all");
 
   useEffect(() => {
-    setTimeout(() => {
-      setProjects(projectData);
+    const fetchProjects = async () => {
+      const data = await client.fetch(`*[_type == "project"]{
+        title,
+        slug,
+        summary,
+        thumbnail,
+        stacks,
+        category,
+        preview
+      }`);
+      setProjects(data);
       setLoading(false);
-    }, 500);
+    };
+    fetchProjects();
   }, []);
 
   const filteredProjects =
@@ -89,22 +85,20 @@ const Projects = () => {
 
       {/* Projects grid */}
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10 w-full max-w-5xl">
-        {/* <div className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl"> */}
-
         <AnimatePresence>
           {filteredProjects.map((project) => (
             <motion.div
-              key={project.id}
+              key={project.slug.current}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
               className="bg-[var(--card-bg-color)] rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300 flex flex-col w-full"
             >
-              {/* Thumbnail fills top */}
+              {/* Thumbnail */}
               <div className="w-full h-56 md:h-64 lg:h-72 overflow-hidden rounded-t-xl">
                 <img
-                  src={imageMap[project.thumbnail] || placeholderImage}
+                  src={project.thumbnail ? urlFor(project.thumbnail) : placeholderImage}
                   alt={project.title}
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                 />
@@ -112,19 +106,17 @@ const Projects = () => {
 
               {/* Content */}
               <div className="p-6 flex flex-col flex-grow">
-                {/* Title */}
                 <h3 className="text-lg md:text-xl font-semibold text-[var(--main-text-color)] mb-3 text-left tracking-wide">
                   {project.title}
                 </h3>
 
-                {/* Summary */}
                 <p className="text-[var(--secondary-text-color)] mb-5 flex-grow text-left text-sm leading-relaxed">
                   {project.summary}
                 </p>
 
                 {/* Stacks */}
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.stacks.map((stack, idx) => (
+                  {project.stacks?.map((stack, idx) => (
                     <span
                       key={idx}
                       className="px-2 py-0.5 text-xs rounded bg-[var(--button-bg-color)] text-[var(--secondary-text-color)]"
@@ -137,7 +129,7 @@ const Projects = () => {
                 {/* Actions */}
                 <div className="mt-auto flex items-center gap-3">
                   <Link
-                    to={`/projects/${project.id}`}
+                    to={`/projects/${project.slug.current}`}
                     className="flex items-center gap-2 px-3 py-2 bg-[var(--accent)] text-[var(--main-bg-color)] rounded-md hover:bg-[var(--accent)]/70 transition duration-300 text-sm"
                   >
                     <FaInfoCircle className="w-4 h-4" /> Details
