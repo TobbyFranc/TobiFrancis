@@ -9,7 +9,7 @@ const Socials = () => {
               href="https://github.com/TobbyFranc"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[var(--accent)] transition duration-300"
+              className="hover:text-[var(--accent)] text-sm md:text-[16px]  transition duration-300"
             >
               GitHub
             </a>
@@ -19,7 +19,7 @@ const Socials = () => {
               href="https://www.linkedin.com/in/tobi-frank-4-greencraft"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[var(--accent)] transition duration-300"
+              className="hover:text-[var(--accent)] text-sm md:text-[16px]  transition duration-300"
             >
               LinkedIn
             </a>
@@ -28,7 +28,7 @@ const Socials = () => {
               href="http://x.com/x__Doc"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-[var(--accent)] transition duration-300"
+              className="hover:text-[var(--accent)] text-sm md:text-[16px]  transition duration-300"
             >
               X <small className='text-[8px]'>formerly Twitter</small>
             </a>
