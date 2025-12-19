@@ -21,8 +21,8 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setFadeOut(true);
-      setTimeout(() => setLoading(false), 500); // wait for fade animation
-    }, 2000); // show splash for 2s
+      setTimeout(() => setLoading(false), 500); 
+    }, 2000); // 
     return () => clearTimeout(timer);
   }, []);
 
@@ -41,7 +41,6 @@ function App() {
         <Nav />
         <Routes>
           <Route path="/" element={<LandingPage />} />
-          {/* <Route path="/projects/:id" element={<ProjectDetail />} /> */}
           <Route path="/projects/:slug" element={<ProjectDetail />} />
           <Route path="/blog" element={<BlogPage />} />       
           <Route path="/blog/:slug" element={<BlogPost />} /> 
