@@ -21,7 +21,8 @@ const CVSection = () => {
           Tobi Francis Ogunleye · Frontend Developer
         </p>
         <p className="text-sm text-[var(--secondary-text-color)] mt-1">
-          Email: <span className="text-[var(--accent)]">tobbyfranc@gmail.com</span> · Phone: +2348144950975
+          Email: <span className="text-[var(--accent)]">tobbyfranc@gmail.com</span> 
+          {/* · Phone: +2348144950975 */}
         </p>
       </div>
 
