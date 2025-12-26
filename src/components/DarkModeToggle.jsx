@@ -3,7 +3,6 @@ import { FaSun, FaMoon } from "react-icons/fa";
 
 const DarkModeToggle = ({ darkMode, onToggle, variant = "icon" }) => {
   if (variant === "icon") {
-    // Small circular icon-only button
     return (
       <button
         onClick={onToggle}
