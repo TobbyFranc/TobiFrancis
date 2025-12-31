@@ -71,7 +71,7 @@ const CVSection = () => {
       {/* Download CV Button */}
       <div className="mt-6">
         <a
-          href="/cv/Tobi_Frontend_CV.pdf"   //
+          href="/cv/TobiF_Frontend_CV.pdf"   //
           download
           className="px-5 py-3 bg-[var(--accent)] text-[var(--main-bg-color)] flex items-center justify-center rounded-md hover:bg-[var(--accent)]/80 transition font-medium"
         >
